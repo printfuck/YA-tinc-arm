@@ -1,6 +1,4 @@
-# Based off https://hub.docker.com/r/jenserat/tinc/~/dockerfile/ and https://github.com/vimagick/dockerfiles/blob/4953ba1837b55c7e173e1c95100eff6250b7d1b1/tinc/Dockerfile
-
-FROM hypriot/rpi-alpine-scratch
+FROM arm32v7/alpine:3.7
 
 RUN set -xe && apk add -U tinc && rm -rf /var/cache/apk/*
 
