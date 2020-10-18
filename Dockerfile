@@ -1,4 +1,4 @@
-FROM arm32v7/alpine:3.7
+FROM alpine:3.12.0
 
 RUN set -xe && apk add -U tinc && rm -rf /var/cache/apk/*
 
